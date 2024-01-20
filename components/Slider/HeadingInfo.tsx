@@ -39,7 +39,7 @@ function HeadingInfo({ data }: Props) {
   return (
     <motion.div initial="hidden" animate={"visible"} className=" flex flex-col">
       <AnimatedText
-        className=" spacing overflow-hidden text-[#D5D5D6]"
+        className="spacing overflow-hidden text-[#D5D5D6] text-sm"
         data={data?.feature}
       />
       <AnimatedText
