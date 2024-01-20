@@ -1,8 +1,8 @@
 export const sliderData = [
   {
     id: "1",
-    title: "伊段バターコーヒー1",
-    feature: "大人気コーヒー商品1",
+    title: "伊段バターコーヒー",
+    feature: "恒佳の看板商品",
     img: "https://placehold.jp/800x800.png",
     description:
       "ダミーダミーダミーダミーダミー",
