@@ -14,12 +14,12 @@ const menus = [
     link: "/about"
   },
   {
-    title: "主要事業",
-    link: "/business"
-  },
-  {
     title: "会社概要",
     link: "/profile"
+  },
+  {
+    title: "取扱商品",
+    link: "/product"
   },
   {
     title: "組織図",

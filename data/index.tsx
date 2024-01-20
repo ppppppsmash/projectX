@@ -15,7 +15,7 @@ export const sliderData = [
   },
   {
     id: "3",
-    title: "伊段 北海道鹿角霊芝伊段",
+    title: "伊段 北海道鹿角霊芝",
     feature: "大人気コーヒー商品",
     img: "/images/products/product3.jpg",
     description: "健康でいられる体づくりを目指す全ての人に、東洋医学の長い歴史の中で培われた漢方の王様、「鹿角霊芝」をおすすめします",
@@ -23,14 +23,14 @@ export const sliderData = [
   {
     id: "4",
     title: "伊段 生姜ジンジャーミルクティー",
-    feature: "大人気コーヒー商品4",
+    feature: "大人気コーヒー商品",
     img: "/images/products/product4.jpg",
     description: "本品1包(5g)を180ccのお湯に溶かしてお召し上がりください。豆乳を加えてもおいしくいただけます。",
   },
   {
     id: "5",
     title: "伊段 サラシア習慣",
-    feature: "大人気コーヒー商品5",
+    feature: "大人気コーヒー商品ß",
     img: "/images/products/product5.jpg",
     description: "食後の血糖値の上昇を穏やかにする機能が報告されている、サラシア由来サラシノール配合。"
   },
