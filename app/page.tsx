@@ -1,9 +1,12 @@
-import Image from "next/image";
+import FramerMotionLayout from "./FramerMotionLayout";
+import RootContents from "@/components/RootContents";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      
+    <main className="relative min-h-screen select-none overflow-hidden text-white antialiased">
+      <FramerMotionLayout>
+        <RootContents />
+      </FramerMotionLayout>
     </main>
   );
 }
