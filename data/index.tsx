@@ -1,3 +1,22 @@
+export const menus = [
+  {
+    title: "ホーム",
+    link: "/"
+  },
+  {
+    title: "執行役員メッセージ",
+    link: "/about"
+  },
+  {
+    title: "会社概要",
+    link: "/profile"
+  },
+  {
+    title: "取扱商品",
+    link: "/product"
+  },
+];
+
 export const sliderData = [
   {
     id: "1",

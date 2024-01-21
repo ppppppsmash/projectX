@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import HeaderContents from "@/components/HeaderContents";
+import BreadCrumbs from "@/components/UI/BreadCrumbs";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +18,8 @@ export default function SecondLayout({
     <html lang="ja">
       <body className="relative">
         <HeaderContents />
+
+        <BreadCrumbs />
 
         <main className="max-w-[1000px] mx-auto px-5 md:px-[120px] pt-[120px]">
           {children}

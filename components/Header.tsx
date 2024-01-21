@@ -4,28 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const menus = [
-  {
-    title: "ホーム",
-    link: "/"
-  },
-  {
-    title: "執行役員メッセージ",
-    link: "/about"
-  },
-  {
-    title: "会社概要",
-    link: "/profile"
-  },
-  {
-    title: "取扱商品",
-    link: "/product"
-  },
-  // {
-  //   title: "組織図",
-  //   link: "/organization"
-  // }
-];
+import { menus } from "@/data"
 
 function Header() {
   const pathname = usePathname();
@@ -45,7 +24,13 @@ function Header() {
       </Head>
 
       <div className="flex items-center gap-2 font-medium tracking-normal md:tracking-[5px]">
-        <h1 className="text-lg font-semibold">恒佳株式会社</h1>
+        <h1 className="text-lg font-semibold">
+          <Link
+            href="/"
+          >
+            恒佳株式会社
+          </Link>
+        </h1>
       </div>
 
       <ul className="flex flex-wrap items-center gap-3 text-[11px] md:gap-8">
