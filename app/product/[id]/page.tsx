@@ -23,5 +23,5 @@ export default function generateStaticParams({
         </div>
       ))}
     </main>
-  )
-};
+  );
+}

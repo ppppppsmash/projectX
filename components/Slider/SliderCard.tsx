@@ -34,7 +34,7 @@ function SliderCard({ data }: Props) {
         <motion.div>
           <motion.div
             layout
-            className=" mb-2 h-[2px] w-3 rounded-full bg-white"
+            className=" mb-2 h-[2px] w-3 rounded-full bg-yellow-400"
           ></motion.div>
           <motion.p layoutId={data.feature} className="text-xs text-[#D5D5D6]">
             {data.feature}

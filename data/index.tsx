@@ -30,7 +30,7 @@ export const sliderData = [
   {
     id: "5",
     title: "伊段 サラシア習慣",
-    feature: "大人気コーヒー商品ß",
+    feature: "大人気コーヒー商品",
     img: "/images/products/product5.jpg",
     description: "食後の血糖値の上昇を穏やかにする機能が報告されている、サラシア由来サラシノール配合。"
   },

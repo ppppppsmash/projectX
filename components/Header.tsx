@@ -36,8 +36,8 @@ function Header() {
 
   return (
     <div
-      className="absolute mt-5 flex w-full flex-wrap items-center justify-between gap-2 px-5 text-xs
-        font-medium uppercase opacity-90 md:px-10 z-50"
+      className="absolute py-2 flex w-full flex-wrap items-center justify-between gap-2 px-5 text-xs
+        font-medium uppercase md:px-10 z-50 h-14"
     >
       <Head>
         <title>恒佳株式会社</title>
@@ -55,7 +55,7 @@ function Header() {
             className={`${
               active == index && "border-b-2 border-b-yellow-500"
             }
-            inline-block cursor-pointer  border-b-yellow-500 transition duration-300 ease-in-out hover:border-b-2
+            inline-block cursor-pointer  border-b-yellow-500 ease-in-out hover:border-b-2
             hover:text-white hover:scale-[0.9] duration-300 transition-all`}
             onClick={() => activeHandler(index)}
           >
