@@ -28,8 +28,7 @@ const menus = [
 ];
 
 function Header() {
-  const pathname = usePathname()
-  //const [active, setActive] = useState<number>(0);
+  const pathname = usePathname();
   const [active, setActive] = useState<string>(pathname);
 
   const activeHandler = (href: string) => {
