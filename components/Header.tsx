@@ -1,8 +1,8 @@
 import Head from "next/head";
-import Image from "next/image"
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const menus = [
   {
@@ -28,22 +28,24 @@ const menus = [
 ];
 
 function Header() {
-  const [active, setActive] = useState<number>(0);
+  const pathname = usePathname()
+  //const [active, setActive] = useState<number>(0);
+  const [active, setActive] = useState<string>(pathname);
 
-  const activeHandler = (index: number) => {
-    setActive(index);
+  const activeHandler = (href: string) => {
+    setActive(href);
   }
 
   return (
     <div
       className="absolute py-2 flex w-full flex-wrap items-center justify-between gap-2 px-5 text-xs
-        font-medium uppercase md:px-10 z-50 h-14"
+        font-medium uppercase md:px-10 z-50 h-24 md:h-10 bg-white shadow-sm"
     >
       <Head>
         <title>恒佳株式会社</title>
       </Head>
 
-      <div className="flex items-center gap-2 font-medium tracking-[5px]">
+      <div className="flex items-center gap-2 font-medium tracking-normal md:tracking-[5px]">
         <h1 className="text-lg font-semibold">恒佳株式会社</h1>
       </div>
 
@@ -53,14 +55,14 @@ function Header() {
             layout
             key={index}
             className={`${
-              active == index && "border-b-2 border-b-yellow-500"
+              active == menu.link && "border-b-2 border-b-yellow-500"
             }
             inline-block cursor-pointer  border-b-yellow-500 ease-in-out hover:border-b-2
-            hover:text-white hover:scale-[0.9] duration-300 transition-all`}
-            onClick={() => activeHandler(index)}
+            hover:text-yellow-600 hover:scale-[0.9] duration-300 transition-all`}
+            onClick={() => activeHandler(menu.link)}
           >
             <Link
-              href={menu.link}
+              href={{pathname: menu.link}}
             >
               {menu.title}
             </Link>

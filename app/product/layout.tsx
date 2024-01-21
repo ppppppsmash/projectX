@@ -5,7 +5,7 @@ import HeaderContents from "@/components/HeaderContents";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "恒佳株式会社｜商品詳細",
+  title: "恒佳株式会社｜商品詳細リスト",
 };
 
 export default function RootLayout({
@@ -18,7 +18,9 @@ export default function RootLayout({
       <body className="relative">
         <HeaderContents />
 
-        {children}
+        <main className="px-5 md:px-[120px] md:pt-[120px]">
+          {children}
+        </main>
       </body>
     </html>
   );
