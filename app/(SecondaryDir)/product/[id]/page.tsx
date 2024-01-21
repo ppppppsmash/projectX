@@ -12,7 +12,7 @@ export default function generateStaticParams({
   const filteredData = sliderData.filter((data) => data.id === params.id)
 
   return (
-    <main className="px-5 md:px-10 md:pt-[120px]">
+    <div>
       {filteredData.map((data, index) => (
         <div key={index}>
           <p>My id: {data.id}</p>
@@ -22,6 +22,6 @@ export default function generateStaticParams({
           <p>My description: {data.description}</p>
         </div>
       ))}
-    </main>
+    </div>
   );
 }

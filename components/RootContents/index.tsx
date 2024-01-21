@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react";
+import { useState, Fragment } from "react";
 import { Data, CurrentSlideData } from "@/types";
 import { sliderData } from "@/data"
 import BackgroundImages from "@/components/Slider/BackgroundImages";

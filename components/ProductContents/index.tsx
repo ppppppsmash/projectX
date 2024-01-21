@@ -11,11 +11,11 @@ export default function ProductContents() {
   }
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 flex-wrap max-w-full mx-auto">
+    <div className="grid grid-cols-2 md:grid-cols-3 gap-4 flex-wrap max-w-full mx-auto">
       {sliderData.map((data, index) => (
       <div
         key={index}
-        className="px-2 py-3 w-full h-[220px] md:w-full md:h-[260px] md:max-w-[280px] mx-auto
+        className="px-2 py-3 w-full h-[220px] md:w-full md:h-[300px] md:max-w-[280px] mx-auto
           bg-white hover:bg-gray-100 rounded-lg md:px-4 flex flex-col gap-1 cursor-pointer shadow-lg hover:shadow-none
           transition-shadow"
         onClick={() => clickDetail(`/product/${data.id}`)}

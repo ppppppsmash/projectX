@@ -21,10 +21,10 @@ const menus = [
     title: "取扱商品",
     link: "/product"
   },
-  {
-    title: "組織図",
-    link: "/organization"
-  }
+  // {
+  //   title: "組織図",
+  //   link: "/organization"
+  // }
 ];
 
 function Header() {
