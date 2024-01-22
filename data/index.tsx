@@ -87,15 +87,9 @@ export const profileData = [
     value_en: "Six People"
   },
   {
-    name_ja: "管理薬剤師",
+    name_ja: "薬剤師顧問",
     name_en: "Pharmacy",
-    value_ja: "恩田　乾次郎",
-    value_en: "Kenjiro Onda"
-  },
-  {
-    name_ja: "医薬品登録販売者",
-    name_en: "Registered Drug Seller",
-    value_ja: "恩田　乾次郎",
+    value_ja: "若松　一範",
     value_en: "Kenjiro Onda"
   },
   {
