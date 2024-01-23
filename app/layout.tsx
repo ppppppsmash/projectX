@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import HeaderContents from "@/components/HeaderContents";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "恒佳株式会社",
@@ -18,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className={`${inter.className} relative`}>
+      <body className="relative">
         <HeaderContents />
 
         {children}

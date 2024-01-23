@@ -35,7 +35,7 @@ export default function RootContents() {
           </div>
 
           <div className="col-span-6 flex h-full flex-1 flex-col justify-end p-4 md:justify-end md:p-10">
-            <div className=" flex w-full gap-6">
+            <div className="flex w-full gap-6">
               {data.map((data) => (
                 <SliderCard key={data.img} data={data} />
               ))}
