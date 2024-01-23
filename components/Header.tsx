@@ -16,24 +16,24 @@ function Header() {
 
   return (
     <div
-      className="absolute py-2 flex w-full flex-wrap items-center justify-between gap-2 px-5 text-xs
-        font-medium uppercase md:px-10 z-50 h-24 md:h-10 bg-white shadow-sm"
+      className="absolute py-2 flex w-full flex-wrap items-center justify-around sm:justify-between gap-2 px-5 text-xs
+        font-medium uppercase md:px-[2%] z-50 h-22 md:h-18 bg-white shadow-sm"
     >
       <Head>
         <title>恒佳株式会社</title>
       </Head>
 
-      <div className="flex items-center gap-2 font-medium tracking-normal md:tracking-[5px]">
-        <h1 className="text-lg font-semibold">
+      <div className="flex items-center gap-2 font-medium tracking-normal md:tracking-[4px]">
+        <h1 className="w-[150px] mx-auto">
           <Link
             href="/"
           >
-            恒佳株式会社
+            <img className="w-full" src="images/logo.png" alt="ロゴ" />
           </Link>
         </h1>
       </div>
 
-      <ul className="flex flex-wrap items-center gap-3 text-[11px] md:gap-8">
+      <ul className="flex flex-wrap items-center gap-x-5 gap-y-3 text-[11px] md:gap-8">
         {menus.map((menu, index) => (
           <motion.li
             layout
