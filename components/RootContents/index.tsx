@@ -27,14 +27,14 @@ export default function RootContents() {
 
       <div className="absolute z-20 h-full w-full">
         <div className="flex h-full w-full grid-cols-10 flex-col md:grid">
-          <div className="col-span-4 mb-3 flex h-full flex-1 flex-col justify-end px-5 md:mb-0 md:justify-center md:px-10">
+          <div className="col-span-4 mb-3 flex h-full flex-1 flex-col justify-end px-5 md:mb-0 md:justify-center md:px-[10%]">
             <SliderInfo
               transitionData={transitionData}
               currentSlideData={currentSlideData}
             />
           </div>
 
-          <div className="col-span-6 flex h-full flex-1 flex-col justify-end p-4 md:justify-end md:p-10">
+          <div className="col-span-6 flex md:h-full flex-2 flex-col justify-end px-4 py-8 md:justify-end md:px-[10%] md:py-[6%]">
             <div className="flex w-full gap-6">
               {data.map((data) => (
                 <SliderCard key={data.img} data={data} />
