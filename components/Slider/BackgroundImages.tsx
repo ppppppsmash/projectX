@@ -26,6 +26,7 @@ function BackgroundImage({ transitionData, currentSlideData }: Props) {
           <video
             className="scale-[6] sm:scale-[1]"
             muted
+            loop
             ref={videoRef}
           >
             <source
@@ -47,12 +48,34 @@ function BackgroundImage({ transitionData, currentSlideData }: Props) {
           src={transitionData.img}
         />
       )}
-      <motion.img
-        alt="Current Image"
-        key={currentSlideData.data.img + "transition"}
-        src={currentSlideData.data.img}
-        className="absolute left-1/2 bottom-[4%] -translate-x-1/2 h-[84%] w-[96%] object-cover brightness-[0.4] rounded-md"
-      />
+
+      {currentSlideData.data.id == "0" ? (
+
+        <motion.div
+        className="absolute left-[2%] z-10 top-[10%] h-[90%] w-[96%] object-cover brightness-[0.4]
+          rounded-md overflow-hidden"
+        >
+          <video
+            className="scale-[6] sm:scale-[1]"
+            muted
+            loop
+            ref={videoRef}
+          >
+            <source
+              src={transitionData.img}
+              type="video/mp4"
+            />
+          </video>
+        </motion.div> 
+      ) : (
+        <motion.img
+          alt=""
+          key={currentSlideData.data.img + "transition"}
+          src={currentSlideData.data.img}
+          className="absolute left-1/2 bottom-[4%] -translate-x-1/2 h-[84%] w-[96%] object-cover brightness-[0.4] rounded-md"
+        />
+      )
+    }
     </div>
   );
 }
