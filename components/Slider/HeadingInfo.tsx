@@ -61,22 +61,23 @@ function HeadingInfo({ data }: Props) {
         data={data?.description}
       />
     </motion.div>
-    <motion.div layout className=" mt-5 flex items-center gap-3">
-        <button
-          className=" w-fit rounded-full border-[1px] border-[#ffffff8f] px-6 py-3 text-[10px] font-thin transition duration-300 
-            ease-in-out hover:bg-white hover:text-black"
-          onClick={() => clickDetail(`product/${data.id}`)}
-        >
-          詳細を閲覧
-        </button>
-        <button
-          className="flex h-[41px] w-[41px] items-center justify-center rounded-full bg-yellow-500 text-xs  transition 
-            duration-300 ease-in-out hover:opacity-80 "
-        >
-          <LuMousePointerClick className="w-5 h-5" />
-        </button>
-      </motion.div>
-    </>
+    <motion.div layout className="mt-5 flex items-center gap-3">
+      <button
+        className=" w-fit rounded-full border-[1px] border-[#ffffff8f] px-5 py-2 text-[10px] font-thin transition duration-300 
+          ease-in-out hover:bg-white hover:text-black flex items-center gap-x-2 group"
+        onClick={() => clickDetail(`product/${data.id}`)}
+      >
+        <span>詳細を閲覧</span>
+        <LuMousePointerClick className="text-yellow-400 w-5 h-5 group-hover:animate-ping" />
+      </button>
+      {/* <button
+        className="flex h-[41px] w-[41px] items-center justify-center rounded-full bg-yellow-500 text-xs  transition 
+          duration-300 ease-in-out hover:opacity-80 "
+      >
+        <LuMousePointerClick className="w-5 h-5" />
+      </button> */}
+    </motion.div>
+  </>
   );
 }
 
