@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Data, CurrentSlideData } from "@/types";
+import { useRef } from "react";
+import { useEffect } from "react";
 
 type Props = {
   transitionData: Data;
@@ -8,9 +10,31 @@ type Props = {
 };
 
 function BackgroundImage({ transitionData, currentSlideData }: Props) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    videoRef.current?.play();
+}, []);
+
   return (
     <div>
-      {transitionData && (
+      {transitionData && transitionData.id == "0" ? (
+        <motion.div
+          className="absolute left-[2%] z-10 top-[10%] h-[90%] w-[96%] object-cover brightness-[0.4]
+            rounded-md overflow-hidden"
+        >
+          <video
+            className="scale-[6] sm:scale-[1]"
+            muted
+            ref={videoRef}
+          >
+            <source
+              src={transitionData.img}
+              type="video/mp4"
+            />
+          </video>
+        </motion.div>
+      ) : (
         <motion.img
           key={transitionData.img}
           layoutId={transitionData.img}

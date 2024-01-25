@@ -1,4 +1,5 @@
 export type Data = {
+  id?: string;
   img: string;
   title: string;
   description: string;
