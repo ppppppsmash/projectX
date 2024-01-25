@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
-import image1 from "../../public/images/about/about_pic.jpg";
-import image2 from "../../public/images/about/about_pic.jpg";
-import image3 from "../../public/images/about/about_pic.jpg";
-import image4 from "../../public/images/about/about_pic.jpg";
-import image5 from "../../public/images/about/about_pic.jpg";
+import image1 from "@/public/images/about/about_pic.jpg";
+import image2 from "@/public/images/about/about_pic.jpg";
+import image3 from "@/public/images/about/about_pic.jpg";
+import image4 from "@/public/images/about/about_pic.jpg";
+import image5 from "@/public/images/about/about_pic.jpg";
 
 const images = [image1, image2, image3, image4, image5]
 const alts = [
