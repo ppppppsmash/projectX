@@ -20,7 +20,7 @@ export const menus = [
 export const sliderData = [
   {
     id: "0",
-    title: "宣伝広告動画",
+    title: "プロモーション動画",
     feature: "宣伝広告",
     img: "/videos/ad_video.mp4",
     description: "原宿,渋谷,新宿で広告宣伝を行いました。"
