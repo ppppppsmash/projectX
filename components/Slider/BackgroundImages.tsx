@@ -19,12 +19,20 @@ function BackgroundImage({ transitionData, currentSlideData }: Props) {
   return (
     <div>
       {transitionData && transitionData.id == "0" ? (
+        <div>
+          <motion.img
+            alt=""
+            key="0"
+            src="/videos/ad_video_pic.png"
+            className="block sm:hidden absolute left-1/2 bottom-[4%] -translate-x-1/2 h-[84%] w-[96%] object-cover brightness-[0.4] rounded-md"
+          />
+
         <motion.div
-          className="absolute left-[2%] z-10 top-[10%] h-[90%] w-[96%] object-cover brightness-[0.4]
+          className="hidden sm:block absolute left-[2%] z-10 top-[10%] h-[90%] w-[96%] object-cover brightness-[0.4]
             rounded-md overflow-hidden"
         >
           <video
-            className="scale-[6] sm:scale-[1]"
+            className="hidden sm:block scale-[6] sm:scale-[1]"
             muted
             loop
             ref={videoRef}
@@ -35,6 +43,7 @@ function BackgroundImage({ transitionData, currentSlideData }: Props) {
             />
           </video>
         </motion.div>
+      </div>
       ) : (
         <motion.img
           key={transitionData.img}
@@ -50,23 +59,31 @@ function BackgroundImage({ transitionData, currentSlideData }: Props) {
       )}
 
       {currentSlideData.data.id == "0" ? (
+        <div>
+          <motion.img
+            alt=""
+            key="0"
+            src="/videos/ad_video_pic.png"
+            className="block sm:hidden absolute left-1/2 bottom-[4%] -translate-x-1/2 h-[84%] w-[96%] object-cover brightness-[0.4] rounded-md"
+          />
 
-        <motion.div
-        className="absolute left-[2%] z-10 top-[10%] h-[90%] w-[96%] object-cover brightness-[0.4]
-          rounded-md overflow-hidden"
-        >
-          <video
-            className="scale-[6] sm:scale-[1]"
-            muted
-            loop
-            ref={videoRef}
+          <motion.div
+            className="hidden sm:block absolute left-[2%] z-10 top-[10%] h-[90%] w-[96%] object-cover brightness-[0.4]
+              rounded-md overflow-hidden"
           >
-            <source
-              src={transitionData.img}
-              type="video/mp4"
-            />
-          </video>
-        </motion.div> 
+            <video
+              className="hidden sm:block scale-[6] sm:scale-[1]"
+              muted
+              loop
+              ref={videoRef}
+            >
+              <source
+                src={transitionData.img}
+                type="video/mp4"
+              />
+            </video>
+          </motion.div> 
+        </div>
       ) : (
         <motion.img
           alt=""

@@ -7,10 +7,12 @@ import BackgroundImages from "@/components/Slider/BackgroundImages";
 import SliderCard from "../Slider/SliderCard";
 import Controls from "../Slider/Controls";
 import SliderInfo from "../Slider/SliderInfo";
+import { useEffect } from "react";
 
 const initData = sliderData[0];
 
 export default function RootContents() {
+  const [isMobile, setIsMobile] = useState<boolean>(false);
   const [data, setData] = useState<Data[]>(sliderData.slice(1));
   const [transitionData, setTransitionData] = useState<Data>(sliderData[0]);
   const [currentSlideData, setCurrentSlideData] = useState<CurrentSlideData>({
@@ -35,10 +37,17 @@ export default function RootContents() {
           </div>
 
           <div className="col-span-6 flex md:h-full flex-2 flex-col justify-end px-4 py-8 md:justify-end md:px-[10%] md:py-[6%]">
-            <div className="flex w-full gap-6">
-              {data.map((data) => (
-                <SliderCard key={data.img} data={data} />
-              ))}
+            <div className="hidden sm:flex w-full gap-6">
+            {data.map((data) => (
+              <SliderCard key={data.img} data={data} />
+            ))}
+            </div>
+
+            <div className="flex sm:hidden w-full gap-6">
+            {data.map((data) => (
+              data.id != "0" &&
+              <SliderCard key={data.img} data={data} />
+            ))}
             </div>
             
             <Controls

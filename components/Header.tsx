@@ -23,17 +23,22 @@ function Header() {
         <title>恒佳株式会社</title>
       </Head>
 
-      <div className="flex items-center gap-2 font-medium tracking-normal md:tracking-[4px]">
+      <div className="flex items-center gap-2 font-medium tracking-normal md:tracking-[4px] mb-5">
         <h1 className="w-[150px] mx-auto">
-          <Link
+          <a
             href="/"
           >
-            <img className="w-full" src="images/logo.png" alt="ロゴ" />
-          </Link>
+            <motion.img
+              layoutId="100"
+              alt="logo"
+              src="images/logo.png"
+              className="w-full"
+            />
+          </a>
         </h1>
       </div>
 
-      <ul className="flex flex-wrap items-center gap-x-5 gap-y-3 text-[11px] md:gap-8">
+      <ul className="flex flex-wrap items-center gap-x-8 sm:gap-x-5 gap-y-3 text-[11px] md:gap-8">
         {menus.map((menu, index) => (
           <motion.li
             layout

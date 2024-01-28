@@ -24,41 +24,34 @@ function SliderCard({ data }: Props) {
         stiffness: 100,
       }}
     >
-      {data.id == "0" ? (
-        <motion.div
-          className="absolute h-full w-full rounded-2xl object-cover brightness-75 overflow-hidden"
-        >
-          <video className="scale-[4]">
-            <source
-              src={data.img}
-            />
-          </video>
-        </motion.div>
-      ) : (
+      {data.id != "0" &&
+      <motion.div>
         <motion.img
           layoutId={data.img}
           alt="Transition Image"
           src={data.img}
           className="absolute h-full w-full rounded-2xl object-cover brightness-75"
         />
-      )}
-      <motion.div className="absolute z-10 flex h-full items-end p-4">
-        <motion.div>
-          <motion.div
-            layout
-            className="mb-2 h-[2px] w-3 rounded-full bg-yellow-400"
-          ></motion.div>
-          <motion.p layoutId={data.feature} className="text-xs text-[#D5D5D6]">
-            {data.feature}
-          </motion.p>
-          <motion.h1
-            layoutId={data.title}
-            className="text-sm leading-6 text-white"
-          >
-            {data.title}
-          </motion.h1>
+
+        <motion.div className="absolute z-10 flex h-full items-end p-4">
+          <motion.div>
+            <motion.div
+              layout
+              className="mb-2 h-[2px] w-3 rounded-full bg-yellow-400"
+            ></motion.div>
+            <motion.p layoutId={data.feature} className="text-xs text-[#D5D5D6]">
+              {data.feature}
+            </motion.p>
+            <motion.h1
+              layoutId={data.title}
+              className="text-sm leading-6 text-white"
+            >
+              {data.title}
+            </motion.h1>
+          </motion.div>
         </motion.div>
       </motion.div>
+      }
     </motion.div>
   );
 }
