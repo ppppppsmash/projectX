@@ -19,9 +19,8 @@ export default function SecondLayout({
       <body className="relative">
         <HeaderContents />
 
-        <BreadCrumbs />
-
         <main className="max-w-[1000px] mx-auto px-5 md:px-[120px] pt-[120px]">
+          <BreadCrumbs />
           {children}
         </main>
       </body>

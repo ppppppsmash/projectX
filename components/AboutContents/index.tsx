@@ -6,11 +6,9 @@ export default function AboutContents() {
   
   return (
     <div className="my-5">
-      <div className="absolute top-16 sm:top-12 left-0 z-50 w-full">
         <AboutPhoto />
-      </div>
       
-      <div className="mt-36 md:mt-64 text-[12px] sm:text-[14px] leading-6">
+      <div className="mt-10 md:mt-32 text-[12px] sm:text-[14px] leading-6">
         <p>恒佳株式会社は2012年7月24日（平成24年）に設立し、この十年間にわたり、「美」「健康」「ゆとり」「時代の空気」などの側面からお客さまの暮らしの質的向上を応援するという理念を貫いており、日本の健康食品、漢方薬、化粧品を世界の方々にお求めやすい価格でお届けすることを約束します。</p>
         <br />
         今年で10年目を迎える恒佳株式会社は、「みんなの人生の段階ごとに健康で美しくいるように」を企業理念としております。 自社が伊段シリーズを開発し始めまして、弊社の中核ブランドである伊段シリーズは、日本の健康食品をより便利で効果的な方式で皆様にお届けし、世界中の人々がより効果的に健康を増進し、楽しい生活を送ることができるようにするための製品なので、

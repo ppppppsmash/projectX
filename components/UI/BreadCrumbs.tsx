@@ -11,7 +11,7 @@ function BreadCrumbs() {
   const currentMenuItem = menus.find((menu) => menu.link === pathname);
 
   return (
-    <div className="px-5 md:px-10 pt-12">
+    <div className="mt-2 sm:mt-0 mb-6">
       <nav className="flex">
         <ol className="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
           <li className="inline-flex items-center text-[10px]">
