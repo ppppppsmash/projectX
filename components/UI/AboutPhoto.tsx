@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
-import image1 from "/images/about/about_pic1.jpg";
-import image2 from "/images/about/about_pic2.jpg";
-import image3 from "/images/about/about_pic3.jpg";
-import image4 from "/images/about/about_pic4.jpg";
-import image5 from "/images/about/about_pic5.jpg";
-import image6 from "/images/about/about_pic6.jpg";
+import image1 from "@/public/images/about/about_pic.jpg";
+import image2 from "@/public/images/about/about_pic2.jpg";
+import image3 from "@/public/images/about/about_pic3.jpg";
+import image4 from "@/public/images/about/about_pic4.jpg";
+import image5 from "@/public/images/about/about_pic5.jpg";
+import image6 from "@/public/images/about/about_pic6.jpg";
 
 const images = [image1, image2, image3, image4, image5, image6]
 const alts = [
