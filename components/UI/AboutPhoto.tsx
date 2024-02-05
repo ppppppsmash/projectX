@@ -11,7 +11,15 @@ import image4 from "@/public/images/about/about_pic4.jpg";
 import image5 from "@/public/images/about/about_pic5.jpg";
 import image6 from "@/public/images/about/about_pic6.jpg";
 
-const images = [image1, image2, image3, image4, image5, image6]
+//const images = [image1, image2, image3, image4, image5, image6]
+const images = [
+  "/images/about/about_pic.jpg",
+  "/images/about/about_pic2.jpg",
+  "/images/about/about_pic3.jpg",
+  "/images/about/about_pic4.jpg",
+  "/images/about/about_pic5.jpg",
+  "/images/about/about_pic6.jpg",
+]
 const alts = [
   "恒佳について1",
   "恒佳について2",
@@ -60,7 +68,7 @@ export function AboutPhoto() {
       >
         {images.map((image, idx) => (
           <motion.div
-            key={image.src}
+            key={idx}
             className="relative h-40 flex-none shrink-0 snap-start overflow-hidden rounded-xl
             bg-zinc-100 ring-2 ring-lime-800/20 dark:bg-zinc-800 dark:ring-lime-300/10 md:h-60 md:rounded-3xl"
             animate={{
@@ -81,6 +89,8 @@ export function AboutPhoto() {
           >
             <Image
               src={image}
+              width={100}
+              height={100}
               alt={alts[idx] ?? ""}
               sizes="(min-width: 640px) 18rem, 11rem"
               className="pointer-events-none absolute inset-0 h-full w-full select-none object-cover"
