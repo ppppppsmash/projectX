@@ -97,7 +97,7 @@ export const profileData = [
     name_ja: "薬剤師顧問",
     name_en: "Pharmacy",
     value_ja: "若松　一範",
-    value_en: "Kenjiro Onda"
+    value_en: "Kazunori Wakamatsu"
   },
   {
     name_ja: "主要取引銀行",
